@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E555C0D2413F4C50049A1A2 /* IosAsssetExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* IosAsssetExporter.m */; };
-		F4FF95D7245B92E800C19C63 /*  IosAsssetExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /*  IosAsssetExporter.swift */; };
+		F4FF95D7245B92E800C19C63 /* IosAssetExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* IosAssetExporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libIosAsssetExporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIosAsssetExporter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5891CC2AC0600A0062D /* IosAsssetExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosAsssetExporter.m; sourceTree = "<group>"; };
-		F4FF95D5245B92E700C19C63 /* IosAsssetExporter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosAsssetExporter-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* IosAsssetExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosAsssetExporter.swift; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libIosAssetExporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIosAssetExporter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E7B5891CC2AC0600A0062D /* IosAssetExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IosAssetExporter.m; sourceTree = "<group>"; };
+		F4FF95D5245B92E700C19C63 /* IosAssetExporter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IosAssetExporter-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4FF95D6245B92E800C19C63 /* IosAssetExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosAssetExporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +43,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libIosAsssetExporter.a */,
+				134814201AA4EA6300B7C361 /* libIosAssetExporter.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,9 +51,9 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				F4FF95D6245B92E800C19C63 /* IosAsssetExporter.swift */,
-				B3E7B5891CC2AC0600A0062D /* IosAsssetExporter.m */,
-				F4FF95D5245B92E700C19C63 /* IosAsssetExporter-Bridging-Header.h */,
+				F4FF95D6245B92E800C19C63 /* IosAssetExporter.swift */,
+				B3E7B5891CC2AC0600A0062D /* IosAssetExporter.m */,
+				F4FF95D5245B92E700C19C63 /* IosAssetExporter-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* IosAsssetExporter */ = {
+		58B511DA1A9E6C8500147676 /* IosAssetExporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IosAsssetExporter" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IosAssetExporter" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -74,9 +73,9 @@
 			);
 			dependencies = (
 			);
-			name = IosAsssetExporter;
+			name = IosAssetExporter;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libIosAsssetExporter.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libIosAssetExporter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +92,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IosAsssetExporter" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IosAssetExporter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -106,7 +105,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* IosAsssetExporter */,
+				58B511DA1A9E6C8500147676 /* IosAssetExporter */,
 			);
 		};
 /* End PBXProject section */
@@ -116,8 +115,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4FF95D7245B92E800C19C63 /* IosAsssetExporter.swift in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* IosAsssetExporter.m in Sources */,
+				F4FF95D7245B92E800C19C63 /* IosAssetExporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +166,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -212,7 +210,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -230,7 +228,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = IosAsssetExporter;
+				PRODUCT_NAME = IosAssetExporter;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "IosAsssetExporter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -249,7 +247,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = IosAsssetExporter;
+				PRODUCT_NAME = IosAssetExporter;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "IosAsssetExporter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -259,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IosAsssetExporter" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "IosAssetExporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -268,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IosAsssetExporter" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "IosAssetExporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,

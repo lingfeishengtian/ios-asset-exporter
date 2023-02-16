@@ -6,17 +6,55 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const IosAsssetExporter = NativeModules.IosAsssetExporter
-  ? NativeModules.IosAsssetExporter
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
+export enum PhotoAssetErrors {
+  noAssetsFound,
+  destinationNotAccessible,
+}
 
-export function multiply(a: number, b: number): Promise<number> {
-  return IosAsssetExporter.multiply(a, b);
+export enum PhotoAssetWarnings {
+  duplicateIdentifiersRemoved,
+  destinationFileAlreadyExists,
+  blacklistedExtension,
+  noDeletionNecesary,
+}
+
+export type ExportedAssetResource = {
+  associatedAssetID: string
+  localFileLocations: string
+  warning: PhotoAssetWarnings[]
+}
+
+export type PhotoAssetResults = {
+  error?: PhotoAssetErrors[],
+  general?: PhotoAssetWarnings[],
+  exportResults?: ExportedAssetResource[]
+}
+
+const AssetExporter = NativeModules.AssetExporter
+  ? NativeModules.AssetExporter
+  : new Proxy(
+    {},
+    {
+      get() {
+        throw new Error(LINKING_ERROR);
+      },
+    }
+  );
+
+export async function exportPhotoAssets(
+  photoIdentifiers: [string],
+  exportPath: string,
+  withPrefix: string,
+  shouldRemoveExistingFile: boolean,
+  ignoreBlacklist: boolean): Promise<PhotoAssetResults> {
+  return new Promise((resolve, reject) => {
+    AssetExporter.exportPhotoAssets(photoIdentifiers, exportPath, withPrefix, shouldRemoveExistingFile, ignoreBlacklist,
+      (results: string) => {
+        try {
+          resolve(JSON.parse(results) as PhotoAssetResults)
+        } catch (e) {
+          reject(e)
+        }
+      });
+  });
 }

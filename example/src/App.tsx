@@ -1,13 +1,15 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-ios-assset-exporter';
+import { exportPhotoAssets } from 'react-native-ios-assset-exporter';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    exportPhotoAssets(['1', '2'], '/tmp', 'test', true, true).then((results) => {
+      setResult(results.exportResults?.length);
+    })
   }, []);
 
   return (

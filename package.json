@@ -1,6 +1,6 @@
 {
-  "name": "react-native-ios-assset-exporter",
-  "version": "0.1.0",
+  "name": "react-native-ios-asset-exporter",
+  "version": "0.1.5",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
