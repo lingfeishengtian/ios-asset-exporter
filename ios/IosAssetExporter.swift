@@ -7,6 +7,7 @@
 import Foundation
 import Photos
 
+@available(iOS 13.0.0, *)
 @objc(AssetExporter) class AssetExporter: NSObject {
   @objc enum PhotoAssetErrors: Int, Codable {
     case noAssetsFound
